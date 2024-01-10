@@ -17,7 +17,7 @@ All information pertaining to Alpine use obtained from the [CURC read the docs p
 
 <br>
 
-UC Boulder RC Mission:
+### UC Boulder RC Mission:
 > _"CU Boulder Research Computing (RC) supports fair and equitable access for a diverse set of
 stakeholders to innovative large-scale computing and data resources emphasizing open, stable,
 and secure access to data while maintaining required measures of compliance for our sponsors. "_
@@ -36,7 +36,8 @@ Once a terminal is installed access is fairly straight forward. Simply launch a 
 
 <br>
 
-{: .note } `ssh` stand for Secure Shell protocol and is a secure method to connect your personal laptop (or desktop) to the remote server.
+{: .note }
+`ssh` stand for Secure Shell protocol and is a secure method to connect your personal laptop (or desktop) to the remote server.
 
 <br>
 
