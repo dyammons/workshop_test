@@ -1,8 +1,18 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: CSU coding workshop
+description: A compilation of lessons on general coding topics!
 theme: just-the-docs
 
 url: https://dyammons.github.io/WORKSHOP_TEST
 
 aux_links:
   Template Repository: https://dyammons.github.io/WORKSHOP_TEST
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+
+callouts:
+  note:
+    title: Note
+    color: purple

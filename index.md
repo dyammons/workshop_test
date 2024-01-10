@@ -3,16 +3,6 @@ title: Home
 layout: home
 ---
 
----
-layout: about
-title: about
-permalink: /
-
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-social: true  # includes social icons at the bottom of the page
----
-
 Welcome to the homepage for the general coding workshop! This event is part of the Flint Animal Cancer Center (FACC) Cancer, Cookies, and Coding series.
 
 The goal of this workshop is to compile, share, and discuss general coding resources that can be used to assist in training computationally oriented researchers.
