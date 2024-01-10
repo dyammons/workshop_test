@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-# Welcome to the homepage for the general coding workshop!
+# FACC general coding workshop - Spring 2024!
 This workshop page is part of the Flint Animal Cancer Center (FACC) Cancer, Cookies, and Coding series.
 
 The goal of this workshop is to compile, share, and discuss general coding resources that can be used to assist in training computationally oriented researchers.
@@ -24,12 +24,6 @@ The goal of this workshop is to compile, share, and discuss general coding resou
 - Data wrangling using R
 - Tools to enhance reproducible and transparent reporting
 
-# header 1
-## header 2
-### header 3
-#### header 4
-##### header 5
-###### header 6
 
 
 [Just the Docs]: https://just-the-docs.github.io/just-the-docs/
