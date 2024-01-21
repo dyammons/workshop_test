@@ -19,7 +19,8 @@ The goal of this workshop is to compile, share, and discuss general coding resou
 ## Workshop topics:
 - Alpine supercomputing usage, resources, and best practices
 - Command line, bash scripting, and personalization of your terminal
-- Git version control and GitHub
+- Git version control 
+- GitHub and GitHub pages
 - Software containers (Singularity)
 - Data wrangling using R
 - Tools to enhance reproducible and transparent reporting

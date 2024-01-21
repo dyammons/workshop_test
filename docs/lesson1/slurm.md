@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resources
+title: Slurm
 parent: Alpine overview
 nav_order: 3.5
 ---
