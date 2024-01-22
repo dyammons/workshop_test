@@ -127,7 +127,7 @@ This is my favorite method of connecting to the server. It is versatile web brow
 
 For first time login you will have to choose your institution, but if you select "remember my selection" you will not have to do this step again.  
 
-![ondemand1](/docs/assests/images/ondemand1.png){:width="70%" height="70%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand1](../assests/images/ondemand1.png){:width="70%" height="70%" style="display:block; margin-left:auto; margin-right:auto"}
 
 <br>
 
