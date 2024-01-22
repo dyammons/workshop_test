@@ -133,19 +133,19 @@ For first time login you will have to choose your institution, but if you select
 
 Use your CSU credentials to login via CILogon...  
 
-![ondemand2](/docs/assests/images/ondemand2.png){:width="30%" height="30%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand2](../assests/images/ondemand2.png){:width="30%" height="30%" style="display:block; margin-left:auto; margin-right:auto"}
 
 <br>
 
 ...and authenticate using Duo  
 
-![ondemand3](/docs/assests/images/ondemand3.png){:width="30%" height="30%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand3](../assests/images/ondemand3.png){:width="30%" height="30%" style="display:block; margin-left:auto; margin-right:auto"}
 
 <br>
 
 Once you have completed those steps you will now be on OnDemand and the home page should look something like this:  
 
-![ondemand4](/docs/assests/images/ondemand4.png){:width="70%" height="70%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand4](../assests/images/ondemand4.png){:width="70%" height="70%" style="display:block; margin-left:auto; margin-right:auto"}
 
 <br>
 
@@ -154,13 +154,13 @@ Once logged in you can gain access to the supercomputer using the "Clusters" tab
 #### Cluster terminal
 Navigate the page to launch a terminal through Alpine shell:  
 
-![ondemand5](/docs/assests/images/ondemand5.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand5](../assests/images/ondemand5.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 <br>
 
 Once clicked, a terminal will open in a new window and you will be placed on a login node (same as if you had `ssh`ed in via a terminal).  
 
-![ondemand6](/docs/assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand6](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 <br>
 
@@ -172,7 +172,7 @@ We will discuss how to compute using this approach in more detail later on, but 
 
 Navigate page to start an interactive session by selecting an interactive app. I frequently use the `JuypterLab (custom)` option, but the other options are worth exploring if you are more interested in using `VS code` or `Rstudio`. All of the options provide an integrated development environment (IDE) like experience which is highly conducive to efficiently writing and testing code.  
 
-![ondemand7](/docs/assests/images/ondemand7.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand7](../assests/images/ondemand7.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 <br>
 
@@ -180,23 +180,23 @@ Once you click on the application, `JuypterLab (custom)` in this case, you can s
 
 The time and number of core can be set as you see fit. If I know I am going to be working on the computer all day I often launch 12 hour sessions with anywhere from 1-8 cores. To being, lets launch a session with 1 core and 4 hours.
 
-![ondemand8](/docs/assests/images/ondemand8.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand8](../assests/images/ondemand8.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 After clicking `Launch` you will see a new session appear in the `My Interactive Sessions` tab. The status of the session (indicated in the top right of the session card) will progress from __`queued` to `starting` to `running`. Once the session is terminated the status will change to `completed`.__  
 
-![ondemand9](/docs/assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand9](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
-![ondemand10](/docs/assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand10](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
-![ondemand11](/docs/assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand11](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 Once the status changes to `running` __a blue button labeled `Connect to Juypter` will appear__. Click this button to open a JuypterLab session in a new tab. This is the IDE-like application that we will be using to work on Alpine in most sessions associated with this workshop.  
 
-![ondemand12](/docs/assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand12](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 The starting layout should have one tab open within JuypterLab called `Launcher` this can be used to open up python environments (kernals), Juypter Notebooks, and to launch linux terminals. We will use the launcher to open a Linux terminal by clicking the `Terminal` button.  
 
-![ondemand13](/docs/assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand13](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 You are now connected to the supercomputer through a linux terminal similar to the above two approaches. __A key difference using the interactive session approach that you are not on login node, but rather you are on the node that was specified when you launched the session (in this case `acompile`).__ Being on an `acompile` node allows users to complete more resource intense tasks than a `login` node. Differences between nodes, discussion of available resource, and an overview of Alpine file systems will be covered in the next two pages.
 
