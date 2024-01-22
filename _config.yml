@@ -5,7 +5,7 @@ theme: just-the-docs
 url: https://dyammons.github.io/WORKSHOP_TEST
 
 aux_links:
-  Template Repository: https://dyammons.github.io/WORKSHOP_TEST
+  Template Repository: https://github/dyammons/WORKSHOP_TEST
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -23,7 +23,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 
 
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
-color_scheme: nil
+color_scheme: dark
 
 callouts_level: quiet # or loud
 callouts:
@@ -38,6 +38,6 @@ callouts:
   note:
     title: Note
     color: purple
-  warning:
+  warn:
     title: Warning
     color: red

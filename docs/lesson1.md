@@ -24,7 +24,7 @@ All information pertaining to Alpine has been obtained from the [CURC read the d
 ### UC Boulder RC Mission:
 > _"CU Boulder Research Computing (RC) supports fair and equitable access for a diverse set of
 stakeholders to innovative large-scale computing and data resources emphasizing open, stable,
-and secure access to data while maintaining required measures of compliance for our sponsors. "_
+and secure access to data while maintaining required measures of compliance for our sponsors."_
 
 <br>
 

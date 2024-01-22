@@ -8,5 +8,3 @@ has_children: true
 
 ## Leaping in bash scripting
 
-
-
