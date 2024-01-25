@@ -17,19 +17,9 @@ The goal of this workshop is to compile, share, and discuss general coding resou
 
 
 ## Workshop topics:
-- Alpine supercomputing usage, resources, and best practices
-- Command line, bash scripting, and personalization of your terminal
+- Alpine supercomputing access, file systems, resources, and personalization
 - Git version control 
 - GitHub and GitHub pages
-- Software containers (Singularity)
-- Data wrangling using R
-- Tools to enhance reproducible and transparent reporting
-
-
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+- Data management and reproducible/transparent reporting
+- Bash scripting
+- Software containers (Conda, Docker, Singularity)

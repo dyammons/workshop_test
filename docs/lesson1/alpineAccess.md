@@ -5,7 +5,7 @@ parent: Alpine overview
 nav_order: 0.5
 ---
 
-## Accessing the computer
+# Accessing the computer
 
 There are a few different ways to access the supercomputer. No approach is inherently better than another, so the choice is up to the User to decide what works best for them. 
 
@@ -13,13 +13,13 @@ In this section we will go over various methods of interacting with the server t
 
 There are two main methods of accessing the supercomputer (1) use a [local terminal](#1-terminal) or (2) use [OnDemand](#2-ondemand). We will go over how to use a linux terminal then demonstrate how to use the OnDemand portal.  
 
-### 1. Terminal
+## 1. Terminal
 
 To access the server via a terminal you will need a linux terminal (Mac) or a third party application to launch a terminal through a __subprocess__ (Windows; typically Ubuntu, git bash, putty). Check out the installation section of resources for more details on how to get these programs running.
 
 <br>
 
-#### Connect via `ssh`  
+### Connect via `ssh`  
 
 Once a terminal is installed access is fairly straight forward. Simply launch a terminal then `ssh` onto the server. 
 
@@ -46,9 +46,19 @@ Once the above command is run (be sure to modify it with your username), you wil
 
 <br>
 
-##### Important tangent
+#### Important tangent
+<style>
+details > p {
+  background-color: #def3fd;
+  padding-inline: 5%;
+}
+</style>
 
-{: .note }
+
+<details markdown="block">
+<summary>Click to view </summary>
+<p markdown="block">
+
 If this is your first time connecting to the server via a terminal you will be asked to verify the host key fingerprint. This is a unique string of characters that gives you the opportunity to confirm you are connecting to the computer you intend to interact with. You will instead be prompted with:
 
 ```sh
@@ -59,16 +69,17 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? y
 Please type 'yes', 'no' or the fingerprint: 
 ```
 
-{: .note }
-(Cont.) You can review the host keys listed on in the CURC [host key documentation](https://curc.readthedocs.io/en/latest/access/logging-in.html#ssh-host-keys) at which point you can cross reference the fingerprint listed above `SHA256:uNn+9REKipRZ59VZQEKlBzB8xjOCe/9yII8uBgEFOGY` to make sure it matches with the provided keys. If they match you can answer with `yes` if they do not match you can say `no` and it will cancel the connection. A more secure approach is to use the `fingerprint` option where you can copy the code that you think matches the from the CURC documentation and the ssh client will only proceed is they match. In this case we will type the key (obtained from to [CURC documentation](https://curc.readthedocs.io/en/latest/access/logging-in.html#ssh-host-keys) to ensure everything looks correct.
+You can review the host keys listed on in the CURC [host key documentation](https://curc.readthedocs.io/en/latest/access/logging-in.html#ssh-host-keys) at which point you can cross reference the fingerprint listed above `SHA256:uNn+9REKipRZ59VZQEKlBzB8xjOCe/9yII8uBgEFOGY` to make sure it matches with the provided keys. If they match you can answer with `yes` if they do not match you can say `no` and it will cancel the connection. A more secure approach is to use the `fingerprint` option where you can copy the code that you think matches the from the CURC documentation and the ssh client will only proceed is they match. In this case we will type the key (obtained from to [CURC documentation](https://curc.readthedocs.io/en/latest/access/logging-in.html#ssh-host-keys) to ensure everything looks correct.
 
 ```sh
 Please type 'yes', 'no' or the fingerprint: SHA256:uNn+9REKipRZ59VZQEKlBzB8xjOCe/9yII8uBgEFOGY
 Warning: Permanently added 'login.rc.colorado.edu' (ED25519) to the list of known hosts. (output)
 ```
 
-{: .note }
-(Cont.) The statement "Warning: Permanently added 'login.rc.colorado.edu' (ED25519) to the list of known hosts" indicates the host key is saved and you will not need verify it again in the future. FYI: any ssh keys should be stored in `$HOME/.ssh/known_hosts`
+The statement "Warning: Permanently added 'login.rc.colorado.edu' (ED25519) to the list of known hosts" indicates the host key is saved and you will not need verify it again in the future. FYI: any ssh keys should be stored in `$HOME/.ssh/known_hosts`
+
+</p>
+</details>
 
 <br>
 
@@ -119,7 +130,7 @@ Connection to login.rc.colorado.edu closed.
 
 While I typically prefer to use OnDemand (introduced below) to interact with Alpine, it is important to understand this more "primitive" approach (especially if OnDemand is down) and to better understand how User-supercomputer interactions work (which will come into play with data transfer).  
 
-### 2. OnDemand
+## 2. OnDemand
 
 This is my favorite method of connecting to the server. It is versatile web browser based application that allows for interaction via a variety of approaches.
 
@@ -151,7 +162,7 @@ Once you have completed those steps you will now be on OnDemand and the home pag
 
 Once logged in you can gain access to the supercomputer using the "Clusters" tab or launching an interactive session through the "My Interactive Sessions" tab.
 
-#### Cluster terminal
+### Cluster terminal
 Navigate the page to launch a terminal through Alpine shell:  
 
 ![ondemand5](../assests/images/ondemand5.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
@@ -160,7 +171,7 @@ Navigate the page to launch a terminal through Alpine shell:
 
 Once clicked, a terminal will open in a new window and you will be placed on a login node (same as if you had `ssh`ed in via a terminal).  
 
-![ondemand6](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand6](../assests/images/ondemand6.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 <br>
 
@@ -168,7 +179,7 @@ This approach is a quick and easy way to connect to the server to make minor mod
 
 We will discuss how to compute using this approach in more detail later on, but for now close the connection to the server by running `exit`, then close the browser tab.  
 
-#### Interactive session
+### Interactive session
 
 Navigate page to start an interactive session by selecting an interactive app. I frequently use the `JuypterLab (custom)` option, but the other options are worth exploring if you are more interested in using `VS code` or `Rstudio`. All of the options provide an integrated development environment (IDE) like experience which is highly conducive to efficiently writing and testing code.  
 
@@ -182,21 +193,32 @@ The time and number of core can be set as you see fit. If I know I am going to b
 
 ![ondemand8](../assests/images/ondemand8.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
-After clicking `Launch` you will see a new session appear in the `My Interactive Sessions` tab. The status of the session (indicated in the top right of the session card) will progress from __`queued` to `starting` to `running`. Once the session is terminated the status will change to `completed`.__  
+After clicking `Launch` you will see a new session appear in the `My Interactive Sessions` tab. The status of the session (indicated in the top right of the session card) will progress from `Queued` to `Starting` to `Running`. Once the session is terminated the status will change to `Completed`.  
 
-![ondemand9](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand9](../assests/images/ondemand9.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
-![ondemand10](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand10](../assests/images/ondemand10.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
-![ondemand11](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand11](../assests/images/ondemand11.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
-Once the status changes to `running` __a blue button labeled `Connect to Juypter` will appear__. Click this button to open a JuypterLab session in a new tab. This is the IDE-like application that we will be using to work on Alpine in most sessions associated with this workshop.  
+![ondemand12](../assests/images/ondemand12.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
-![ondemand12](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+Once the status changes to `Running` a blue button labeled `Connect to Juypter` will appear. Click this button to open a JuypterLab session in a new tab. This is the IDE-like application that we will be using to work on Alpine in most sessions associated with this workshop.  
+
+![ondemand13](../assests/images/ondemand13.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
 The starting layout should have one tab open within JuypterLab called `Launcher` this can be used to open up python environments (kernals), Juypter Notebooks, and to launch linux terminals. We will use the launcher to open a Linux terminal by clicking the `Terminal` button.  
 
-![ondemand13](../assests/images/holder.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+![ondemand14](../assests/images/ondemand14.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
-You are now connected to the supercomputer through a linux terminal similar to the above two approaches. __A key difference using the interactive session approach that you are not on login node, but rather you are on the node that was specified when you launched the session (in this case `acompile`).__ Being on an `acompile` node allows users to complete more resource intense tasks than a `login` node. Differences between nodes, discussion of available resource, and an overview of Alpine file systems will be covered in the next two pages.
+![ondemand15](../assests/images/ondemand15.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
 
+![ondemand16](../assests/images/ondemand16.png){:width="50%" style="display:block; margin-left:auto; margin-right:auto"}
+
+You are now connected to the supercomputer through a linux terminal similar to the above two approaches. __A key difference using the JuypterLab approach is that you are not on login node, but rather you are on the node that was specified when you launched the session (in this case `acompile`).__ Being on an `acompile` node allows users to complete more resource intense tasks than is allowed on a `login` node. Differences between nodes, discussion of available resource, and an overview of Alpine file systems will be covered in the next two pages.
+
+```sh
+(base) login-ci1 ~ $ que
+JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+4470851  acompile sys/dash dyammons PD       0:00      1 (Job's QOS not permitted to use this partition (acompile allows admin,compile not normal))       
+```
